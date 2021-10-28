@@ -1,0 +1,191 @@
+*{
+    --displayColor:#202020;
+    --horizontalDisplayWidth:250px;
+    --verticalDisplayHeight:170px;
+}
+
+
+body{
+    background-color: black;
+}
+.container{
+    height: 470px;
+    width: 400px;
+    display: block;
+    margin: 30px auto;
+    background-color: black;
+}
+
+.displayElement:nth-child(1){
+    position: relative;
+    width: var(--horizontalDisplayWidth);
+    height: 30px;
+    margin: 10px auto;
+    background-color: var(--displayColor);
+}
+.displayElement:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    border: 15px solid transparent;
+    border-left: 15px solid var(--displayColor,#72856b);
+}
+
+.displayElement:nth-child(2){
+    position:relative;
+    height: var(--verticalDisplayHeight);
+    width: 30px;
+    right: -325px;
+    top: -5px;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    top: -30px;
+    border-bottom: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    bottom: -30px;
+    border-top: 15px solid var(--displayColor,#72856b);
+}
+
+
+.displayElement:nth-child(6){
+    position:relative;
+    height: var(--verticalDisplayHeight);
+    width: 30px;
+    left: 45px;
+    top: -565px;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(6)::before{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    top: -30px;
+    border-bottom: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(6)::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    bottom: -30px;
+    border-top: 15px solid var(--displayColor,#72856b);
+}
+
+.displayElement:nth-child(3){
+    position:relative;
+    height: var(--verticalDisplayHeight);
+    width: 30px;
+    right: -325px;
+    top: 35px;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    top: -30px;
+    border-bottom: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    bottom: -30px;
+    border-top: 15px solid var(--displayColor,#72856b);
+}
+
+.displayElement:nth-child(5){
+    position:relative;
+    height: var(--verticalDisplayHeight);
+    width: 30px;
+    left: 45px;
+    top: -185px;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(5)::before{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    top: -30px;
+    border-bottom: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(5)::after{
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    bottom: -30px;
+    border-top: 15px solid var(--displayColor,#72856b);
+}
+
+
+.displayElement:nth-child(4){
+    position: relative;
+    width: var(--horizontalDisplayWidth);
+    top: 30px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(4)::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    border: 15px solid transparent;
+    border-left: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(7){
+    position: relative;
+    width:var(--horizontalDisplayWidth);
+    top: -570px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: var(--displayColor,#72856b);
+}
+.displayElement:nth-child(7)::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid var(--displayColor,#72856b);
+}
+.displayElement:nth-child(7)::after{
+    content: "";
+    position: absolute;
+    right: -30px;
+    border: 15px solid transparent;
+    border-left: 15px solid var(--displayColor,#72856b);
+}
+
+/* For Buttons  */
+
+#buttons{
+    width: 700px;
+    margin: auto auto;
+}
+button{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
